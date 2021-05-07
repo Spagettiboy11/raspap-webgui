@@ -4,7 +4,7 @@ define('RASPI_BRAND_TEXT', 'RaspAP');
 define('RASPI_CONFIG', '/etc/raspap');
 define('RASPI_CONFIG_NETWORK', RASPI_CONFIG.'/networking/defaults.json');
 define('RASPI_ADMIN_DETAILS', RASPI_CONFIG.'/raspap.auth');
-define('RASPI_WIFI_AP_INTERFACE', 'wlan0');
+define('RASPI_WIFI_AP_INTERFACE', 'wlan1');
 define('RASPI_CACHE_PATH', sys_get_temp_dir() . '/raspap');
 
 // Constants for configuration file paths.
@@ -37,7 +37,7 @@ define('RASPI_NETWORK_ENABLED', true);
 define('RASPI_DHCP_ENABLED', true);
 define('RASPI_ADBLOCK_ENABLED', false);
 define('RASPI_OPENVPN_ENABLED', false);
-define('RASPI_TORPROXY_ENABLED', false);
+define('RASPI_TORPROXY_ENABLED', true);
 define('RASPI_CONFAUTH_ENABLED', true);
 define('RASPI_CHANGETHEME_ENABLED', true);
 define('RASPI_VNSTAT_ENABLED', true);
